@@ -1,0 +1,21 @@
+@mixin font-300 {
+    font-family: $base-font;
+    font-weight:300;
+}
+
+@mixin font-700 {
+    font-family: $base-font;
+    font-weight:700;
+}
+
+@mixin gold-header {
+    text-transform: uppercase;
+    text-align:center;
+    color: $gold;
+    @include media($desktop) {
+        margin-top:em(30);
+        margin-bottom:em(30);
+    }
+    @include span-columns(6);
+
+}

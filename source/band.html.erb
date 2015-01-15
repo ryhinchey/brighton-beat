@@ -1,0 +1,32 @@
+---
+title: The Band
+---
+<section class="the-band">
+    <%= partial 'header' %>
+    <div class="band-primary">
+        <h1> About The Band </h1>
+        <div class="band-bio">
+            <p> Driven by a unified belief in real people playing real instruments expressing real human emotions, The Brighton Beat's goal is to create music that is able to live, breath and develop, with songs that allow the musicians to communicate and tell a story through carefully crafted melodies and inspired solo passages. Real world experiences and an inherent knowledge of jazz set them apart from the crowd. This is a band of working professional musicians looking to make a name for themselves in the ever burgeoning Afrobeat scene. Heavily influenced by Afrobeat pioneer Fela Kuti, but in no way traditional, The group creates grooves reminiscent of Herbie Hancock, at times reaching the raw, unbridled expression found in the music of Miles Davis and Freddie Hubbard. </p>
+            <p>The Brighton Beat is centered around a strong rhythmic foundation of bass, drums and dense percussion.  Varying textures of unique, vintage keyboard and guitar sounds help to thicken the compositions. Leading the group, the adventurous horn section bring their heavy jazz influence to the forefront.  Bassist Ryan Hinchey and Drummer Sammy Wags established their groove during recording sessions and national tours with various funk and reggae outfits (iLa Mawana, 6th Degree, The Hub Dub). The horn section leaders; Jon Bean (tenor sax) and Mark Zaleski (alto sax) came together while studying jazz at the New England Conservatory. Upon finishing they quickly established themselves as first-call session players for many of Boston's highest regarded jazz projects, all the while cultivating their own ideas, and exploring the different styles of music that influence The Brighton Beat's diverse catalog.</p>
+            <p> The Brighton Beat stormed onto the scene with their debut; "The Brighton Beat EP" in 2010, and have since hit the ground running, performing at premier venues around greater New England.  Their first full-length album; "The Brighton Beat LP" released in 2012, has been critically acclaimed, receiving numerous glowing reviews and has been featured on commercial/college radio and has been used in independent films.  The group is currently touring in support of their first live release; "Live at The Bean Runner"  and is currently planning the release of their next full-length original record "Off We Go" due out Fall 2014.</p>
+        </div>
+        <img src="images/bean_live.jpg">
+    </div>
+    <div class="band-members">
+        <img src="images/group_live.jpg">
+        <img src="images/offwegogroup.jpg">
+        <h3> The Brighton Beat is: </h3>
+        <ul>
+            <% data.members.members.each do |f| %>
+            <li><%= f%></li>
+            <% end %>
+        </ul>
+        <h3> Often Featuring:</h3>
+        <ul>
+            <% data.members.featuring.each do |f| %>
+            <li><%= f%></li>
+            <% end %>
+
+        </ul>
+    </div>
+</section>

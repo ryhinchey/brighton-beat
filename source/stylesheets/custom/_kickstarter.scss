@@ -1,0 +1,30 @@
+section.kickstarter {
+    @include outer-container();
+}
+.kickstarter-primary {
+    h1 {
+        text-align:center;
+        color: $gold;
+        margin-bottom: em(10);
+    }
+}
+
+.thanks {
+    p {
+        text-align:center;
+        font-weight:500;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        margin-bottom: em(20);
+    }
+    ul {
+        text-align:center;
+        li {
+            color: $gold;
+            font-weight: 500;
+        }
+        margin-bottom: em(50);
+    }
+}

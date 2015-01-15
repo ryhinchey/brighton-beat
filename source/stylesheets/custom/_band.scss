@@ -1,0 +1,47 @@
+section.the-band {
+    @include outer-container();
+}
+.band-primary {
+    @include row();
+    height: 100%;
+    margin-bottom: em(50);
+    h1 {
+        text-align:center;
+        color: $gold;
+        margin-bottom: em(30);
+    }
+    @include media($desktop) {
+        img {
+            @include span-columns(6);
+            @include omega;
+        }
+        .band-bio {
+            p {
+                font-weight: 500;
+            }
+            @include span-columns(6);
+        }
+    }
+}
+
+.band-members {
+    @include row();
+    height: 100%;
+    img {
+        @include media($desktop) {
+            @include span-columns(8);
+            margin-bottom: em(50);
+        }
+    }
+    h3 {
+        color: $gold;
+        margin-bottom: em(10);
+    }
+    ul {
+        margin-bottom: em(20);
+    }
+
+    li {
+        font-weight: 500;
+    }
+}

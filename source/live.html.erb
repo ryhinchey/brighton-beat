@@ -1,0 +1,16 @@
+---
+title: The Brighton Beat Live
+---
+<section class="live">
+    <%= partial 'header' %>
+    <div class="live-primary">
+        <h1> The Brighton Beat Show Archive </h1>
+        <small> * All shows stream/download for free * </small>
+        <div class="show-list">
+        <ul>
+            <% data.shows.gigs.each do |s| %>
+                <p><%=s.name %></p>
+            <% end %>
+        </ul>
+    </div>
+</section>
