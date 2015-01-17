@@ -1,0 +1,19 @@
+section.live {
+    @include outer-container;
+    .live-primary {
+        margin-bottom: em(30);
+    }
+    .show-list {
+        @include span-columns(8);
+        @include shift(1);
+        margin-bottom: em(500);
+        a {
+            color: $gold;
+            font-weight: 500;
+        }
+        span {
+            font-size: 14px;
+            font-style: italic;
+        }
+    }
+}

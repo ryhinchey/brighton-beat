@@ -7,8 +7,16 @@ title: Thank You!!
         <h1> Thank You!! </h1>
         <div class="thanks">
             <p>We are so honored, moved, grateful, humbled, and ecstatic!  2014 was a big year for the band.  We recorded a new album, met some incredibly inspiring fans and musicians AND we raised a Kickstarter campaign to support our new album, "Off We Go".  The campaign lasted 1 month and we truly wouldn't be where we are now without the amazing support from our fans across the globe. Thank you to everyone who contributed.  It's absolutely incredible and is something that inspires the band every day.  Words cannot express how thankful we are.  A big THANK YOU goes out to: </p>
-        <ul>
-            <% data.donors.names.each do |f| %>
+        <ul class="names-one">
+            <% data.donors.names1.each do |f| %>
+            <li><%= f %></li>
+            <% end %>
+        </ul>
+        <div class="shekere-kickstarter-container">
+            <img src="/images/shekere.png"/>
+        </div>
+        <ul class="names-two">
+            <% data.donors.names2.each do |f| %>
             <li><%= f %></li>
             <% end %>
         </ul>

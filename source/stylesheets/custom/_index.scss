@@ -35,21 +35,19 @@ section.primary-top {
         @include media($mobile) {
             margin-top:em(30);
         }
-        @include media($desktop) {
-            margin-top:100px;
-        }
         @include media($tablet) {
             margin-top:0;
         }
         h4 {
             @include media($desktop) {
-                @include span-columns(5);
+                @include span-columns(10);
                 @include shift(1);
+                margin-bottom: em(30);
                 background-color: rgba(0, 0, 0, 0.83);
                 padding: em(15);
-                min-height:315px;
                 // TODO: fighting neat here. Need to look into root cause
                 margin-right: 2.35765% !important;
+                text-align:center;
             }
             @include media($tablet) {
                 @include span-columns(6);
@@ -71,7 +69,8 @@ section.primary-top {
         }
         iframe {
             @include media($desktop) {
-                @include span-columns(5);
+                @include span-columns(8);
+                @include shift(2);
                 min-height:315px;
             }
             @include media($tablet) {

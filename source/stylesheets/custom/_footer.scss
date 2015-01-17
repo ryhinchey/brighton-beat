@@ -1,6 +1,7 @@
 footer {
     @include outer-container;
     padding-bottom: em(50);
+    position: relative;
     li {
         display:inline;
         margin-right: em(20);
@@ -9,5 +10,12 @@ footer {
         text-align:center;
         @include span-columns(6);
         @include shift(3);
+    }
+    .shekere-container {
+       position:absolute;
+       bottom: 55%;
+       width: 15%;
+       opacity: 0.5;
+
     }
 }
