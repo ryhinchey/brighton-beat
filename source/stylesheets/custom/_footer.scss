@@ -1,19 +1,22 @@
 footer {
     @include outer-container;
-    padding-bottom: em(50);
-    position: relative;
     li {
         display:inline;
         margin-right: em(20);
     }
+    li a {
+
+        color: $gold;
+        font-weight: 900;
+    }
     ul.contact-links {
         text-align:center;
-        @include span-columns(6);
-        @include shift(3);
+        @include span-columns(8);
+        @include shift(1);
+        padding-top:8em;
     }
     .shekere-container {
-       position:absolute;
-       bottom: 55%;
+       @include span-columns(2);
        width: 15%;
        opacity: 0.5;
 

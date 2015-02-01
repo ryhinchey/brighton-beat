@@ -7,6 +7,9 @@ section.live {
         @include span-columns(8);
         @include shift(1);
         margin-bottom: em(500);
+        li {
+            margin-bottom: em(20);
+        }
         a {
             color: $gold;
             font-weight: 500;

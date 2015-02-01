@@ -11,8 +11,14 @@ title: The Brighton Beat Live
 
             <ul>
                 <% data.shows.shows.each do |f| %>
-                    <li> <a href=<%= f.link %>> <%= f.name %></a> - <span><%= f.type %></span></li>
-
+                    <li>
+                        <a href=<%= f.link %>> <%= f.name %></a> - <span><%= f.type %></span>
+                        <% if f.video %>
+                            <% f.video.each_with_index do |v, i| %>
+                                <span><a target="_blank"href=<%= v %>> Video <%if (f.video.length-1) != i %> | <%end%> </a></span>
+                            <% end %>
+                        <% end %>
+                    </li>
                 <% end %>
             </uL>
 

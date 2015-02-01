@@ -15,7 +15,10 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div class="sticky-wrapper">
+      <%= yield %>
+      <div class="push"></div>
+  </div>
     <%= partial "footer" %>
   </body>
 </html>

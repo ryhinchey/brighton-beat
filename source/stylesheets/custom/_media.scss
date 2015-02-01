@@ -1,0 +1,35 @@
+section.media {
+    h1 {
+        text-align:center;
+        color: $gold;
+        margin-bottom: em(50);
+    }
+    .video-holder {
+        @include media($desktop) {
+            @include span-columns(10);
+            @include shift(1);
+        }
+        @include media($tablet) {
+            @include span-columns(6);
+            @include shift(1);
+        }
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+    }
+    iframe {
+        @include media($desktop) {
+            @include span-columns(5 of 10);
+            @include omega(2n);
+        }
+        margin-bottom: em(30);
+        @include media($tablet) {
+            @include span-columns(6 of 6);
+        }
+        @include media($mobile) {
+            @include span-columns(4);
+        }
+
+    }
+
+}
