@@ -67,18 +67,20 @@ section.primary-top {
                 margin-bottom: em(10);
             }
         }
-        iframe {
-            @include media($desktop) {
-                @include span-columns(8);
-                @include shift(2);
-                min-height:315px;
-            }
-            @include media($tablet) {
-                @include span-columns(6);
-                @include shift(1);
-            }
-            @include media($mobile) {
-                @include span-columns(4);
+        div.video {
+            iframe {
+                @include media($mobile) {
+                    @include span-columns(4);
+                }
+                @include media($tablet) {
+                    @include span-columns(6);
+                    @include shift(1);
+                }
+
+                @include media($desktop) {
+                    @include span-columns(8);
+                    @include shift(2);
+                }
             }
         }
     }
