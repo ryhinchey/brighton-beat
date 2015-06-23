@@ -1,4 +1,8 @@
 shows:
+- name: "4/5/15 - The Brooklyn Bowl - New York City, NY"
+  link: "https://thebrightonbeatlive.bandcamp.com/album/brooklyn-bowl-4-5-15"
+  video: ["https://www.youtube.com/watch?v=PnKdKSK6EBU"]
+  type: "field recording"
 - name: "4/5/14-Spike Hill - New York City, NY"
   link:  "http://thebrightonbeatlive.bandcamp.com/album/spike-hill-4-5-14"
   video: ["https://www.youtube.com/watch?v=QPAE2VOyq_g&t=367"]
