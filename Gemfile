@@ -2,13 +2,13 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.3.6"
+gem "middleman"
 gem 'bitters'
-gem 'bourbon'
+gem 'bourbon', "~> 4.2.7"
 gem 'neat'
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
@@ -16,7 +16,6 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-# Deployment
-gem "middleman-deploy", '~>1.0'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
 gem 'middleman-gh-pages'

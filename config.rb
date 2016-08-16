@@ -11,7 +11,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :partials_dir, 'partials'
 activate :directory_indexes
 
 configure :build do
@@ -24,5 +23,5 @@ end
 # Deployment config
 
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
 end
