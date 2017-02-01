@@ -4,8 +4,6 @@ section.live {
         margin-bottom: em(30);
     }
     .show-list {
-        @include span-columns(8);
-        @include shift(1);
         margin-bottom: em(500);
         li {
             margin-bottom: em(20);

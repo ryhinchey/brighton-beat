@@ -24,13 +24,18 @@ footer, push {
 
 a {
     text-decoration:none;
-    color: white;
+    color: $gold;
     &:hover {
-        color:white;
-        text-decoration:underline;
+      color: $gold;  
+      text-decoration:underline;
     }
 }
 
+section {
+  @include media($mobile) {
+    padding: 0 10px;
+  }
+}
 
 
 

@@ -10,6 +10,9 @@ section.the-band {
         color: $gold;
         margin-bottom: em(30);
     }
+    img {
+      margin-bottom: 10px;
+    }
     @include media($desktop) {
         img {
             @include span-columns(6);

@@ -1,8 +1,18 @@
 shows:
+- name: "8/6/2016 - The Blue Note - New York City, NY"
+  link: "https://thebrightonbeatlive.bandcamp.com/album/blue-note-nyc-8-6-16"
+  type: "field recording & board mix"  
+- name: "7/26/16 - The Brighton Music Hall (opening for Femi Kuti) - Boston, MA"
+  link: "https://thebrightonbeatlive.bandcamp.com/album/brighton-music-hall-7-26-16"
+  type: "field recording & board mix"
+  video: ["https://www.youtube.com/watch?v=z2-BNhSE2io&feature=youtu.be"]
 - name: "4/5/15 - The Brooklyn Bowl - New York City, NY"
   link: "https://thebrightonbeatlive.bandcamp.com/album/brooklyn-bowl-4-5-15"
   video: ["https://www.youtube.com/watch?v=PnKdKSK6EBU"]
   type: "field recording"
+- name: "10/10/2014 - The Brooklyn Bowl - New York City, NY"
+  link: "https://thebrightonbeatlive.bandcamp.com/album/brooklyn-bowl-10-10-14"
+  type: "field recording"  
 - name: "4/5/14-Spike Hill - New York City, NY"
   link:  "http://thebrightonbeatlive.bandcamp.com/album/spike-hill-4-5-14"
   video: ["https://www.youtube.com/watch?v=QPAE2VOyq_g&t=367"]

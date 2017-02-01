@@ -14,8 +14,8 @@
     <%= favicon_tag 'images/favicon.ico' %>
   </head>
 
-  <body>
-  <div class="sticky-wrapper">
+  <body class=<% if current_page.url == "/" %> 'index' <% end %>>
+    <div class="sticky-wrapper">
       <%= yield %>
       <div class="push"></div>
   </div>
